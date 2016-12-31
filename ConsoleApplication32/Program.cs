@@ -20,10 +20,12 @@ class Program
 				}
 				catch (DivideByZeroException)
 				{
+					//連続でないから複数回呼ばれる
 					Console.WriteLine("div by zero");
 				}
 			}
 		}
+		//二回連続で捕まえるので一回のみの実行
 		catch (IndexOutOfRangeException)
 		{
 			Console.WriteLine("Index out range");
